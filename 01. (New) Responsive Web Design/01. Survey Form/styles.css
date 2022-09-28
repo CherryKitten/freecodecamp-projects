@@ -1,0 +1,28 @@
+body{
+  background: url("https://wallpapercave.com/wp/NCJgtUD.jpg");
+  text-align: center;
+}
+
+form{
+  background: linear-gradient(90deg, rgb(0, 255, 0), rgb(255, 0, 0), rgb(0, 0, 255));
+  opacity: 0.75;
+  text-align: left;
+  margin: auto;
+  padding: 20px;
+  width: 50%;
+  max-width: 500px;
+  min-width: 300px;
+}
+
+label, input, select, textarea{
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+}
+
+
+input[type="radio"], input[type="checkbox"]{
+  display: inline;
+  margin: auto 5px;
+  width: 25px;
+}

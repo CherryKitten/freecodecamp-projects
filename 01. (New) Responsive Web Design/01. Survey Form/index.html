@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pokémon Survey</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <h1 id="title">Pokémon Survey</h1>
+  <p id="description">Please fill out!</p>
+  <form id="survey-form">
+    <label id="name-label" for="name">What's your name? <input id="name" type="text" placeholder="Example3000" required /></label>
+    <label id="email-label" for="email">Please enter your E-Mail address <input id="email" type="email" placeholder="example@freecodecamp.org" required /></label>
+    <label id="number-label" for="number">What's your favourite positive number under 2000? <input id="number" type="number" min="0" max="2000" placeholder="420" /></label>
+    <label for="dropdown">
+      What's your favourite Eeveelution?
+      <select id="dropdown">
+        <option>----------</option>
+        <option>Flareon</option>
+        <option>Vaporeon</option>
+        <option>Jolteon</option>
+        <option>Umbreon</option>
+        <option>Espeon</option>
+        <option>Glaceon</option>
+        <option>Leafeon</option>
+        <option>Sylveon</option>
+      </select>
+    </label>
+    <label>What version did you play?
+      <label for="version1"><input type="radio" name="version" id="version1" value="1">Red</label>
+      <label for="version2"><input type="radio" name="version" id="version2" value="2">Green</label>
+      <label for="version3"><input type="radio" name="version" id="version3" value="3">Yellow</label>
+    </label>
+    <label>What types do you have on your team?
+      <label><input type="checkbox" value="1">Normal</label>
+      <label><input type="checkbox" value="2">Fire</label>
+      <label><input type="checkbox" value="3">Water</label>
+      <label><input type="checkbox" value="4">Electric</label>
+    </label>
+    <label for="textarea">Tell us about your favourite Pokémon!
+      <textarea id="textarea" rows="5" cols="50" placeholder="My favourite Pokémon is..."></textarea>
+    </label>
+    <input value="Submit" type="submit" id="submit">
+  </form>
+</body>
+</html>
