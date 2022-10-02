@@ -1,0 +1,60 @@
+body{
+    background-color: #1A222F;
+}
+main{
+    background-color: #1C3A40;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    padding: 5px 0;
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+h1{
+    margin: 10px auto;
+}
+
+.subtitle{
+    font-size: 12pt;
+    margin: 10px auto;
+}
+
+.img-div{
+    background-color: #1A222F;
+    width: 90%;
+    margin: auto;
+}
+
+.caption{
+    padding-top: 0;
+    padding-bottom: 20px;
+    font-family: unset;
+    font-size: 10pt;
+}
+
+.tribute-info{
+    max-width: 50%;
+    margin: auto;
+}
+
+a {
+    color: gray;
+}
+
+img{
+    padding: 10px;
+    margin: auto;
+    width: 75%;
+    max-width: 100%;
+    display: block;
+}
+
+ul{
+    max-width: 20%;
+    margin: 0 auto;
+    list-style-type: none;
+    padding: 0;
+}
+.right{
+    float: right;
+}
