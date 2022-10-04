@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            The Linux command line
+        </header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#Basic_navigation">Basic navigation</a></li>
+            <li><a class="nav-link" href="#Manipulating_files_and_directories">Manipulating files and directories</a></li>
+            <li><a class="nav-link" href="#Some_more_tips">Some more tips</a></li>
+            <li><a class="nav-link" href="#Lorem">Lorem</a></li>
+            <li><a class="nav-link" href="#Ipsum">Ipsum</a></li>
+            <li><a class="nav-link" href="#Foo">Foo</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>
+                Introduction
+            </header>
+            <article>
+                <p class="content">
+                The command line is one of the most important tools of any Linux system.<br>
+                It is so important, on many server systems it is the only way for the user to interact with
+                the operating system.
+                </p>
+                <p class="content">
+                On most modern Linux systems, the default <a href="https://en.wikipedia.org/wiki/Shell_(computing)">Shell</a>
+                is called <i>bash</i>, but users can choose from a wide variety of shells, like <i>zsh</i> or <i>fish</i><br>
+                There are many reasons why many prefer to work on the command line, for example:<br>
+                </p>
+                <ul>
+                    <li>
+                        Resources: The command line is a relatively simple text interface, so it takes less computing resources than rendering a <a href="https://en.wikipedia.org/wiki/Graphical_user_interface">GUI</a>.
+                    This is especially important on servers, where efficiency is important and there is no point in using energy on a graphical interface that isn't needed for most of the time.
+                    </li>
+                    <li>
+                        Keyboard focus: After an admittedly steep initial learning curve, being able to do most things without ever moving the hands away from the keyboard, and to the mouse,
+                        can make many workflows a lot more efficient. There are keyboard shortcuts to do almost <i>anything</i>, as well as auto-completion for commands, paths, filenames, and the arguments of many programs.
+                    </li>
+                    <li>
+                        Automation: There are many repetitive tasks that take a lot of time on a GUI, because they involve clicking back and forth between the same things over and over again.
+                        Command line scripts can easily automate those tasks.
+                    </li>
+                </ul>
+            </article>
+        </section>
+        <section class="main-section" id="Basic_navigation">
+            <header>
+                Basic navigation
+            </header>
+            <p>
+                Ok so basically: when you're on the command line, you're always located in one directory. Usually you start off in your user's home directory.
+                That current directory is called the <i>Working directory</i>. You navigate to other directories by using <code>cd</code>, you list your directory contents with <code>ls</code> and <span class="underline">p</span>rint your current <span class="underline">w</span>orking <span class="underline">d</span>irectory
+                by typing in <code>pwd</code>.
+            </p>
+            <p>
+                Some examples:
+            </p>
+                <code>
+                    $ pwd # Print working directory<br>
+                    -> /home/yourname<br>
+                    $ ls # List files in current directory<br>
+                    -> Downloads test.txt<br>
+                    $ ls -a # Include Hidden Files<br>
+                    -> .bash_history .bashrc Downloads test.txt
+                </code>
+        </section>
+        <section class="main-section" id="Manipulating_files_and_directories">
+            <header>
+                Manipulating files and directories
+            </header>
+            <p>
+                You can do basically everything to your files from the command line. You can move them, you can edit them, you can even delete them!
+            </p>
+            <p>
+                Look here:
+            </p>
+            <code>
+                $ sudo rm -rf --no-preserve-root / # Delete literally everything. Don't do this please.<br>
+                $ rm {filename} # delete file<br>
+                $ mv {filename} {path} # move file to a different path<br>
+                $ echo 'test' > test.txt # Save the text 'test' into the the file 'test.txt'
+            </code>
+        </section>
+        <section class="main-section" id="Some_more_tips">
+            <header>
+                Some more tips
+            </header>
+            <p>
+                There are a few cool useful commands, keyboard shortcuts and stuff:
+            </p>
+            <ul>
+                <li>
+                    <p>Crtl + A: Jump to start of line</p>
+                </li>
+                <li>
+                    <p>Crtl + E: Jump to end of line</p>
+                </li>
+                <li>
+                    <p>Tab: Autocomplete</p>
+                </li>
+                <li>
+                    <p><code>clear</code>: clear all lines from the screen</p>
+                </li>
+            </ul>
+        </section>
+        <section class="main-section" id="Lorem">
+            <header>
+                Lorem
+            </header>
+            <p>
+                I'm gonna be completely honest, I don't have the attention span to fill all of this with actual useful text, since the main point of this is the HTML and CSS code and I just need something to fill that with.
+            </p>
+            <p>
+                Because of that, I will put some more placeholder text here so the site looks fuller, but I'm focussing more on the code and styling and stuff. okay? okay.
+            </p>
+        </section>
+        <section class="main-section" id="Ipsum">
+            <header>
+                Ipsum
+            </header>
+            <p>Wouldn't it be funny if I just put the whole CSS in here?</p>
+            <pre>
+                <code>
+html {
+    background-color: wheat;
+    margin-right: 20px;
+}
+
+#navbar ul{
+    list-style: none;
+    padding-left: 0;
+    padding-right: 10px;
+    height: 100%
+}
+
+#navbar li{
+    width: 100%;
+    position: relative;
+    border-bottom: solid 2px grey;
+    padding: 5px 5px;
+    margin-bottom: 10%;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+#navbar a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+header{
+    font-size: 1.5em;
+    text-align: center;
+}
+#main-doc{
+    font-family: sans-serif;
+}
+
+section{
+    margin-bottom: 30px;
+}
+
+@media (max-width: 919px){
+    #navbar{
+        width: 100%;
+        text-align: center;
+        max-height: 300px;
+    }
+    #navbar li{
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 920px){
+    #navbar {
+        position: fixed;
+        left: 10px;
+        width: 33%;
+        min-width: 200px;
+        max-width: 300px;
+        height: 100%;
+        border-right: solid 2px grey;
+    }
+    #main-doc{
+        margin-left: 320px;
+    }
+}
+                </code>
+            </pre>
+        </section>
+        <section class="main-section" id="Foo">
+            <header>
+                Foo
+            </header>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Varius sit amet mattis vulputate enim. Consectetur a erat nam at. Dictum varius duis at consectetur lorem donec massa sapien. Magna fringilla urna porttitor rhoncus dolor. Curabitur vitae nunc sed velit dignissim. Faucibus in ornare quam viverra orci sagittis eu volutpat. Tortor at risus viverra adipiscing at in. Venenatis cras sed felis eget. Massa enim nec dui nunc mattis. Dui vivamus arcu felis bibendum ut tristique. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Mauris ultrices eros in cursus turpis massa tincidunt. Scelerisque eleifend donec pretium vulputate sapien nec sagittis. Odio pellentesque diam volutpat commodo sed.
+            </p>
+            <p>
+                Turpis cursus in hac habitasse platea dictumst quisque sagittis purus. Faucibus interdum posuere lorem ipsum dolor sit amet. Tempus iaculis urna id volutpat lacus. Pretium vulputate sapien nec sagittis. Eu lobortis elementum nibh tellus molestie nunc non blandit. Augue eget arcu dictum varius. Duis ut diam quam nulla porttitor massa. Duis at tellus at urna condimentum mattis pellentesque. Nisl vel pretium lectus quam id leo in vitae. Tortor at auctor urna nunc id cursus metus aliquam. Ultrices neque ornare aenean euismod. Mus mauris vitae ultricies leo integer malesuada nunc.
+            </p>
+            <p>
+                Et ultrices neque ornare aenean euismod elementum nisi. Tristique senectus et netus et malesuada fames. Lacinia at quis risus sed vulputate odio ut. Duis ultricies lacus sed turpis tincidunt. Quis ipsum suspendisse ultrices gravida dictum. Curabitur gravida arcu ac tortor dignissim convallis aenean et. Pulvinar neque laoreet suspendisse interdum. Aliquet risus feugiat in ante metus dictum. Aliquet nec ullamcorper sit amet risus nullam eget felis eget. Rhoncus urna neque viverra justo nec ultrices dui.
+            </p>
+        </section>
+    </main>
+</body>
+</html>
