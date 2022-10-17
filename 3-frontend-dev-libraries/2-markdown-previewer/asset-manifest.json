@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/freecodecamp-projects/3-frontend-dev-libraries/2-markdown-previewer/static/css/main.87e8ffa4.css",
+    "main.js": "/freecodecamp-projects/3-frontend-dev-libraries/2-markdown-previewer/static/js/main.8e7f5b3e.js",
+    "index.html": "/freecodecamp-projects/3-frontend-dev-libraries/2-markdown-previewer/index.html",
+    "main.87e8ffa4.css.map": "/freecodecamp-projects/3-frontend-dev-libraries/2-markdown-previewer/static/css/main.87e8ffa4.css.map",
+    "main.8e7f5b3e.js.map": "/freecodecamp-projects/3-frontend-dev-libraries/2-markdown-previewer/static/js/main.8e7f5b3e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87e8ffa4.css",
+    "static/js/main.8e7f5b3e.js"
+  ]
+}
