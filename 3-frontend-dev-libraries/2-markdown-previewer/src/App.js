@@ -68,7 +68,7 @@ class App extends React.Component {
                     >
                         <i className="fa-sharp fa-solid fa-expand"></i>
                     </button>
-                    <div id={'preview'} style={{maxHeight: '100%'}}>
+                    <div id={'preview'} style={{height: '100%', width: '100%'}}>
                         <Markdown gfm={true} breaks={true}>
                             {this.state.preview}
                         </Markdown>
