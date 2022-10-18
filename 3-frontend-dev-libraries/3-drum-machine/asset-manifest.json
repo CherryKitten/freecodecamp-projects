@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/freecodecamp-projects/3-frontend-dev-libraries/3-drum-machine/static/css/main.f48f812e.css",
+    "main.js": "/freecodecamp-projects/3-frontend-dev-libraries/3-drum-machine/static/js/main.00fb1c2d.js",
+    "index.html": "/freecodecamp-projects/3-frontend-dev-libraries/3-drum-machine/index.html",
+    "main.f48f812e.css.map": "/freecodecamp-projects/3-frontend-dev-libraries/3-drum-machine/static/css/main.f48f812e.css.map",
+    "main.00fb1c2d.js.map": "/freecodecamp-projects/3-frontend-dev-libraries/3-drum-machine/static/js/main.00fb1c2d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f48f812e.css",
+    "static/js/main.00fb1c2d.js"
+  ]
+}
