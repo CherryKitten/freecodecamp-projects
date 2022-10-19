@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/freecodecamp-projects/3-frontend-dev-libraries/4-calculator/static/css/main.811ade7f.css",
+    "main.js": "/freecodecamp-projects/3-frontend-dev-libraries/4-calculator/static/js/main.c6608c0f.js",
+    "static/media/meow.mp3": "/freecodecamp-projects/3-frontend-dev-libraries/4-calculator/static/media/meow.a55f7e7f54d06ccaf38c.mp3",
+    "index.html": "/freecodecamp-projects/3-frontend-dev-libraries/4-calculator/index.html",
+    "main.811ade7f.css.map": "/freecodecamp-projects/3-frontend-dev-libraries/4-calculator/static/css/main.811ade7f.css.map",
+    "main.c6608c0f.js.map": "/freecodecamp-projects/3-frontend-dev-libraries/4-calculator/static/js/main.c6608c0f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.811ade7f.css",
+    "static/js/main.c6608c0f.js"
+  ]
+}
