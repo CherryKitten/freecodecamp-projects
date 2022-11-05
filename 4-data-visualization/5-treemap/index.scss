@@ -1,0 +1,26 @@
+html {
+  text-align: center;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: navajowhite;
+}
+
+#tooltip{
+  opacity: 0;
+  height: 50px;
+  width: 250px;
+  border-radius: 5px;
+  padding: 10px;
+  z-index: 10;
+  position: absolute;
+  background-color: greenyellow;
+}
+
+#chart {
+  text-align: center;
+}
+
+#legend svg{
+  border-radius: 5px;
+}
