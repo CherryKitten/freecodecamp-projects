@@ -41,7 +41,7 @@ class SudokuSolver {
   checkRegionPlacement(puzzleString, row, column, value) {}
 
   solve(puzzleString) {
-    return false;
+    return { error: "test" };
   }
 }
 
