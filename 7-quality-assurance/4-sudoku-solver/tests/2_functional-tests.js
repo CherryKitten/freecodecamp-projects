@@ -22,22 +22,20 @@ suite("Functional Tests", () => {
           .end((err, res) => {
             assert.equal(res.status, 200);
             assert.equal(res.body.solution, puzzlesAndSolutions[i][1]);
-            done();
           });
       }
+      done();
     });
     test("Solve a puzzle with missing puzzle string: POST request to /api/solve", (done) => {
-      for (let i in puzzlesAndSolutions) {
-        chai
-          .request(server)
-          .post("/api/solve")
-          .send({})
-          .end((err, res) => {
-            assert.equal(res.status, 200);
-            assert.equal(res.body.error, "Required field missing");
-            done();
-          });
-      }
+      chai
+        .request(server)
+        .post("/api/solve")
+        .send({})
+        .end((err, res) => {
+          assert.equal(res.status, 200);
+          assert.equal(res.body.error, "Required field missing");
+          done();
+        });
     });
     test("Solve a puzzle with invalid characters: POST request to /api/solve", (done) => {
       for (let i in invalidStrings) {
@@ -48,9 +46,9 @@ suite("Functional Tests", () => {
           .end((err, res) => {
             assert.equal(res.status, 200);
             assert.equal(res.body.error, "Invalid characters in puzzle");
-            done();
           });
       }
+      done();
     });
     test("Solve a puzzle with incorrect length: POST request to /api/solve", (done) => {
       for (let i in wrongLengthStrings) {
@@ -62,11 +60,11 @@ suite("Functional Tests", () => {
             assert.equal(res.status, 200);
             assert.equal(
               res.body.error,
-              "Expected puzzle to be 81 charcters long"
+              "Expected puzzle to be 81 characters long"
             );
-            done();
           });
       }
+      done();
     });
     test("Solve a puzzle that cannot be solved: POST request to /api/solve", (done) => {
       for (let i in unsolvableStrings) {
@@ -77,11 +75,12 @@ suite("Functional Tests", () => {
           .end((err, res) => {
             assert.equal(res.status, 200);
             assert.equal(res.body.error, "Puzzle cannot be solved");
-            done();
           });
       }
+      done();
     });
   });
+
   suite("Placement Checks", () => {
     test("Check a puzzle placement with all fields: POST request to /api/check", (done) => {
       chai
