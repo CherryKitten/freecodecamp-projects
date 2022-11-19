@@ -51,3 +51,15 @@ For the code, just browse through the repo. For the previews, see below:
 [Exercise Tracker](https://fcc-exercise-tracker.cherrykitten.repl.co/)
 
 [File Metadata Microservice](https://fcc-file-metadata.cherrykitten.repl.co/)
+
+## Quality Assurance
+
+[Metric-Imperial Converter](https://boilerplate-project-metricimpconverter.cherrykitten.repl.co/)
+
+[Issue Tracker](https://boilerplate-project-issuetracker.cherrykitten.repl.co/)
+
+[Personal Library](https://boilerplate-project-library.cherrykitten.repl.co/)
+
+[Sudoku Solver](https://boilerplate-project-sudoku-solver.cherrykitten.repl.co/)
+
+[American British Translator](https://boilerplate-project-american-british-english-translator.cherrykitten.repl.co/)
